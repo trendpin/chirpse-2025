@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chirpse</title>
+  <style>
+    body{margin:0;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#667ffd,#a855f7,#ff6bcb);color:white;font-family:system-ui}
+    h1{font-size:60px;margin-bottom:40px}
+    input,button{width:360px;padding:16px;border-radius:12px;border:none;margin:10px 0;font-size:17px}
+    input{background:rgba(255,255,255,0.25);color:white}
+    input::placeholder{color:rgba(255,255,255,0.8)}
+    button{background:white;color:#667ffd;font-weight:bold}
+    button:last-child{background:#1c1e21;color:white}
+  </style>
+</head>
+<body>
+  <h1>Chirpse</h1>
+  <input type="email" id="email" placeholder="Email">
+  <input type="text" id="username" placeholder="Username (grab chirpseadmin now)">
+  <input type="password" id="pass" placeholder="Password">
+  <button onclick="signup()">Sign Up</button>
+  <button onclick="login()">Log In</button>
+  <script src="script.js"></script>
+</body>
+</html>
